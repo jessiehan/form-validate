@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>form validate</title>
+	<style type="text/css">
+	
+	.item{
+		margin-bottom:10px;
+	}
+	.item span.error{
+		display:none;
+	}
+	.error{
+		background:#ECACAC;
+	}
+	.error span.error{
+		display:inline-block;
+	}
+	.item label{
+		display:inline-block;
+		width:150px;
+		text-align:right;
+		margin-right:5px;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<form>
+		<div class="item" required data-type="text">
+			<label>text:</label><input type="text" />
+			<span class="error">不能为空哦</span>
+		</div>
+		<div class="item" data-type="text">
+			<label>text2:</label><input type="text" />
+		</div>
+		<div class="item" required data-type="mobile">
+			<label>mobile:</label><input type="text" />
+			<span class="error">请填写正确的手机号</span>
+		</div>
+		
+		<div class="item" required data-type="email">
+			<label>email:</label><input type="text" />
+			<span class="error">请填写正确的邮箱</span>
+			
+		</div>
+		
+		<div class="item" required data-type="date">
+			<label>date:</label><input type="text" />
+			<span class="error">请填写正确的日期</span>
+			
+		</div>
+		
+		<div class="item" required data-type="daterange">
+			<label>daterange:</label><input type="text" />-<input type="text" />
+			<span class="error">请填写正确的日期范围</span>
+			
+		</div>
+		
+		<div class="item" required data-type="price">
+			<label>price:</label><input type="text" />
+			<span class="error">请填写正确的价格</span>
+			
+		</div>
+		
+		<div class="item" required data-type="pricerange">
+			<label>pricerange:</label><input type="text" />-<input type="text" />
+			<span class="error">请填写正确的价格范围</span>
+			
+		</div>
+		
+		<div class="item" required data-type="number">
+			<label>number:</label><input type="text" />
+			<span class="error">请填写正确的数字</span>
+			
+		</div>
+		<div class="item" required data-type="numberrange">
+			<label>numberrange:</label><input type="text" />-<input type="text" />
+			<span class="error">请填写正确的数字范围</span>
+			
+		</div>
+		
+		<div class="item" required data-type="radio">
+			<label>radio:</label><input type="radio" name="radio" />1  <input type="radio" name="radio" />2   <input type="radio" name="radio" />3
+		</div>
+		
+		<div class="item" required data-type="checkbox">
+			<label>checkbox:</label><input type="checkbox" name="checkbox" />1  <input type="checkbox" name="checkbox" />2   <input type="checkbox" name="checkbox" />3
+		</div>
+		
+		<div class="item" required data-type="select">
+			<label>select:</label>
+			<select name="select">
+				<option value="">please choose:</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+		</div>
+		
+	    <input type="button" class="submit" value="submit"/>
+	    <input id="validate-form" type="button" value="validate without submit" />
+		
+	</form>
+	
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="src/validate.js"></script>
+	<script type="text/javascript">
+	
+	$('form').validate();
+	
+	
+	</script>
+	
+</body>
+</html>

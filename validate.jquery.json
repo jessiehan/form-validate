@@ -1,0 +1,27 @@
+{
+  "name": "validate",
+  "title": "Validate",
+  "description": "the form validate jquery plugin",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jessiehan/form-validate",
+  "author": {
+    "name": "hpp",
+    "email": "hpp.zju@gmail.com",
+    "url": "http://zjuhpp.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jessiehan/form-validate.git"
+  },
+  "bugs": "https://github.com/jessiehan/form-validate/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jessiehan/form-validate/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
