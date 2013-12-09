@@ -1,6 +1,8 @@
 # Validate
 
-the form validate jquery plugin
+jquery表单校验插件
+
+特点：除了普通的单个字段，增加了对日期范围、数字范围、价格范围的校验
 
 ## Getting Started
 Download the [production version][min] or the [development version][max].
@@ -9,6 +11,7 @@ Download the [production version][min] or the [development version][max].
 [max]: https://raw.github.com/jessiehan/form-validate/master/dist/validate.js
 
 用法和示例在index.html
+
 参数说明：
 
 itemClass，每一个表单项的class名称，默认是item
